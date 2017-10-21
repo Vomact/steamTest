@@ -1,0 +1,5 @@
+<h1>Results are here!</h1>
+
+<% data["response"]["games"].forEach(function(game){ %>
+    <li><%= game["name"] %> ( <%= Math.floor(game["playtime_forever"]/60) %> hrs played)</li>
+<% }) %>
